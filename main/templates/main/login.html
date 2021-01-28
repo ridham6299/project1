@@ -1,0 +1,15 @@
+{%  block content %}
+<form method="post">
+ {% csrf_token %}
+ {{form.as_p}}
+ <br><br>
+ <button type="submit" name="register">Register</button>
+  </form>
+  <br><br>
+  If you dont have already an account, <a href='/register'><strong>Register</strong></a> for one.
+  <h1>
+  <a href="/">Home</a>
+  <a href="/register"> Register</a>
+  <a href="/login"> Login</a>
+  </h1>
+  {% endblock %}

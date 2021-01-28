@@ -1,0 +1,13 @@
+<body>
+{% for tut in tutorials %}
+<p>{{ tut.tutorial_title }}</p>
+<p>{{ tut.tutorial_published }}</p>
+<p>{{ tut.tutorial_content }}</p>
+<br><br>
+{% endfor %}
+<h1>
+<a href="/">Home</a>
+<a href="/register"> Register</a>
+<a href="/login"> Login</a>
+</h1>
+</body>
